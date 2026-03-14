@@ -4,8 +4,11 @@ pygame.init() # initalises pygame
 
 width, height = 950, 500 # establishes width and height variables
 screen = pygame.display.set_mode((width, height)) # creates the screen
+pygame.display.set_caption("HissyFit") # game name
 
 surface = pygame.image.load("background.png")
+
+money = 0
 
 while True:
     # makes the screen stay up without it it wont work
