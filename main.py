@@ -7,7 +7,9 @@ screen = pygame.display.set_mode((width, height)) # creates the screen
 pygame.display.set_caption("HissyFit") # game name
 
 surface = pygame.image.load("background.png")
-
+icon = pygame.image.load('_ICON.png')
+molly = pygame.image.load('_MOLLY.png')
+pygame.display.set_icon(icon)
 money = 0
 
 while True:
@@ -19,7 +21,7 @@ while True:
     
     # game logic here
     screen.blit(surface, (0,0))
-
+    screen.blit(molly, (350, 100))
     pygame.display.update()
 
 
